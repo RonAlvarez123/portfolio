@@ -104,3 +104,97 @@ header {
 
     }
 }
+
+
+main {
+    font-family: 'Poppins-Regular', sans-serif;
+
+    &>section {
+        padding: 25px;
+
+        h2 {
+            color: $quaternary-color;
+            font-family: 'LeagueSpartan-ExtraBold', sans-serif;
+        }
+
+        article {
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 0 3px gray;
+            margin-bottom: 20px;
+
+            img {
+                max-width: 100%;
+            }
+
+            section {
+                background-color: #eef1f5;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+
+                &>* {
+                    margin: 0;
+                }
+
+                h3 {
+                    color: $primary-color;
+                    font-family: 'Staatliches-Regular', sans-serif;
+                }
+
+                div {
+                    &:first-of-type {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 5px;
+                    }
+
+                    &:last-of-type {
+                        display: flex;
+                        gap: 10px;
+                        justify-content: flex-end;
+
+                        a {
+                            background-color: $secondary-color;
+                            border-radius: 5px;
+                            color: white;
+                            padding: 5px 10px;
+                            text-decoration: none;
+
+                            &.disabled {
+                                background-color: #99abbe;
+                                pointer-events: none;
+                                cursor: default;
+                            }
+                        }
+                    }
+
+                    span {
+                        border: 2px solid lighten($color: $secondary-color, $amount: 20);
+                        border-radius: 5px;
+                        color: lighten($color: $secondary-color, $amount: 20);
+                        font-family: 'Staatliches-Regular', sans-serif;
+                        padding: 2.5px 5px 1px 5px;
+                    }
+                }
+
+                p {
+                    color: $primary-color;
+                    font-size: .9rem;
+                }
+            }
+        }
+
+
+        &:nth-of-type(1) {
+            h2 {
+                text-align: left;
+            }
+
+            article {
+                section {}
+            }
+        }
+    }
+}
