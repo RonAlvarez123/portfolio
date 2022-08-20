@@ -196,5 +196,36 @@ main {
                 section {}
             }
         }
+
+        &:nth-of-type(2) {
+            background-color: $primary-color;
+            padding-top: 40px;
+
+            div {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(auto-fit, minmax(auto, 100px));
+                justify-content: center;
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 20px;
+
+                aside {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    img {
+                        max-width: 50%;
+                    }
+
+                    p {
+                        color: white;
+                        font-family: 'Poppins-Regular', sans-serif;
+                    }
+                }
+            }
+        }
     }
 }
