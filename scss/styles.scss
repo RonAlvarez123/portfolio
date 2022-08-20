@@ -227,5 +227,24 @@ main {
                 }
             }
         }
+
+        &:nth-of-type(3) {
+            div {
+                img {
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px gray;
+                    display: block;
+                    max-width: 70%;
+                    margin: 0 auto;
+                }
+
+                p {
+                    color: $primary-color;
+                    font-size: .9rem;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
