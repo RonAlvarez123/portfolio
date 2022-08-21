@@ -246,5 +246,46 @@ main {
                 }
             }
         }
+
+        &:nth-of-type(4) {
+            background-color: $primary-color;
+            padding-bottom: 40px;
+            padding-top: 40px;
+
+            img {
+                max-width: 40px;
+            }
+
+            aside {
+                color: white;
+                text-align: center;
+                margin: 40px 0;
+
+                h4 {
+                    font-family: 'IBMPlexMono-Regular' sans-serif;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            &>p {
+                color: white;
+                font-size: .9rem;
+                text-align: center;
+            }
+        }
     }
 }
