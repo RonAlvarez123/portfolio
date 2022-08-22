@@ -341,3 +341,31 @@ main {
         }
     }
 }
+
+@media screen and (min-width:500px) {
+    html {
+        font-size: 17px;
+    }
+
+    header {
+        background-image: url('../images/blob5.png');
+        background-position: right 35vw bottom -5vh;
+        grid-template-rows: 72px calc(100% - 72px - 90px);
+        height: 450px;
+    }
+
+    main {
+        section {
+            padding-left: 40px;
+            padding-right: 40px;
+
+            &:nth-of-type(3) {
+                div {
+                    img {
+                        max-width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
