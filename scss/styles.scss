@@ -409,3 +409,31 @@ main {
         }
     }
 }
+
+@media screen and (min-width:700px) {
+    header {
+        background-image: url('../images/blob3.svg');
+        background-position: right 35vw bottom;
+        grid-template-rows: 72px calc(100% - 72px - 90px);
+        height: 550px;
+    }
+
+    main {
+        section {
+            padding: 40px;
+
+            &:nth-of-type(2) {
+                div {
+                    max-width: 500px;
+                }
+            }
+
+            &:nth-of-type(3) {
+                p {
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
