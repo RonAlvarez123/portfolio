@@ -567,3 +567,30 @@ main {
         }
     }
 }
+
+@media screen and (min-width:1200px) {
+    header {
+        background-position: right 15vw bottom;
+        height: 700px;
+
+        nav,
+        section {
+            padding-left: 150px;
+        }
+    }
+
+    main {
+        section {
+            padding-left: 150px;
+            padding-right: 150px;
+
+            &:nth-of-type(2) {
+                min-height: 700px;
+            }
+
+            &:nth-of-type(3) {
+                padding-bottom: 80px;
+            }
+        }
+    }
+}
