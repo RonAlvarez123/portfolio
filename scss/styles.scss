@@ -437,3 +437,73 @@ main {
         }
     }
 }
+
+@media screen and (min-width:768px) {
+    header {
+        background-position: right 25vw bottom;
+
+        nav {
+            padding-left: 100px;
+
+            ul {
+                display: flex;
+                list-style-type: none;
+                padding: 0;
+                gap: 10px;
+
+                li {
+                    a {
+                        color: $quaternary-color;
+                        display: block;
+                        font-family: 'LeagueSpartan-SemiBold', sans-serif;
+                        font-size: 1.1rem;
+                        letter-spacing: 1px;
+                        padding: 10px;
+                        text-decoration: none;
+                        text-shadow: 0 0 3px black;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            div {
+                display: none;
+            }
+        }
+
+        section {
+            padding-left: 100px;
+        }
+    }
+
+    main {
+        section {
+            padding-left: 100px;
+            padding-right: 100px;
+
+            &:nth-of-type(1) {
+                article {
+                    max-width: 70%;
+                    margin-bottom: 30px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                min-height: 650px;
+
+                div {
+                    margin-top: 100px;
+                }
+            }
+
+            &:nth-of-type(3) {
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
