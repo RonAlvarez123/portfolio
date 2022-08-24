@@ -507,3 +507,63 @@ main {
         }
     }
 }
+
+@media screen and (min-width:1000px) {
+    header {
+        height: 650px;
+    }
+
+    main {
+        section {
+            &:nth-of-type(1) {
+                article {
+                    box-shadow: 0 0 5px gray;
+                    border-radius: 10px;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    max-width: 100%;
+
+                    &:nth-of-type(even) {
+                        grid-template-areas: "section img";
+
+                        img {
+                            border-radius: 0 10px 10px 0;
+                        }
+
+                        section {
+                            border-radius: 10px 0 0 10px;
+                        }
+                    }
+
+                    &:nth-of-type(odd) {
+                        grid-template-areas: "img section";
+
+                        img {
+                            border-radius: 10px 0 0 10px;
+                        }
+
+                        section {
+                            border-radius: 0 10px 10px 0;
+                        }
+                    }
+
+                    img {
+                        height: 100%;
+                        grid-area: img;
+                    }
+
+                    section {
+                        height: 100%;
+                        grid-area: section;
+
+                        div {
+                            &:last-of-type {
+                                margin-top: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
