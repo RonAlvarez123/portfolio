@@ -619,3 +619,26 @@ main {
         }
     }
 }
+
+
+@media screen and (min-width:1440px) {
+    html {
+        font-size: 20px;
+    }
+
+    header {
+        background-position: right 15vw bottom;
+
+        nav,
+        section {
+            padding-left: 200px;
+        }
+    }
+
+    main {
+        section {
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+    }
+}
