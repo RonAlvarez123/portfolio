@@ -642,3 +642,38 @@ main {
         }
     }
 }
+
+@media screen and (min-width:1536px) {
+    html {
+        font-size: 24px;
+    }
+
+    header {
+        background-position: right 15vw bottom;
+        height: 800px;
+    }
+
+    main {
+        section {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            &:nth-of-type(2) {
+                div {
+                    column-gap: 40px;
+
+                    aside {
+                        img {
+                            max-width: 80%;
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(even) {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+        }
+    }
+}
